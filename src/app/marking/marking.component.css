@@ -1,0 +1,170 @@
+.container {
+  width: 1500px;
+  min-height: 500px;
+  margin: 25px auto;
+}
+
+header {
+
+  margin: 2rem 0;
+
+  padding: 2rem;
+  height: 5rem;
+  width: 100%;
+
+  border: solid 1px;
+  border-radius: .8rem;
+  box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
+}
+
+header div {
+  display: flex;
+  justify-content: space-between;
+}
+
+header div span {
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+header div span label {
+  font-size: 1rem;
+  font-weight: normal;
+}
+
+
+table {
+  display: block;
+
+  overflow: auto;
+  height: 30rem;
+  padding: 40px 20px;
+  border: solid 1px;
+  border-radius: .5rem;
+  box-sizing: border-box;
+  border-spacing: 0;
+  box-shadow: rgba(0, 0, 0, 0.2) 0px 60px 40px -7px;
+}
+
+tbody,
+td,
+th {
+  color: #777;
+  font-weight: 500;
+  padding: 11px;
+  box-sizing: border-box;
+  border-bottom: 1px solid #d9d9d9;
+
+  /* width: 90px !important; */
+}
+
+tbody,
+td,
+th:first-child {
+  padding: 11px 4px;
+}
+
+th {
+  text-transform: uppercase;
+  color: #777;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+input {
+  padding: .8rem; 
+}
+
+select,
+input {
+  appearance: none;
+  -webkit-appearance: none;
+  outline: none;
+
+
+  width: 60px;
+  height: 25px;
+
+  border: 2px solid #27272a;
+  border-radius: 4px;
+
+  background: #f1f1f7;
+}
+
+table tbody tr td input.dateWeek {
+  width: 100%;
+}
+
+table tbody tr td select,
+table tbody tr td#select {
+  padding: .8rem; 
+
+  width: 100%;
+}
+
+button[type="submit"],
+a.button {
+  padding: 0.3em 1.5rem;
+  background-color: #777;
+  color: #fff;
+  font-size: 16px;
+  border-radius: 4px;
+  width: 100%;
+}
+
+a.button {
+  display: block;
+  box-sizing: border-box;
+  text-align: center;
+  text-decoration: none;
+  margin-bottom: 0;
+}
+
+
+/*filter*/
+.table-container .header {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  margin-bottom: 32PX;
+}
+
+.table-container .header a {
+  margin: 0;
+  width: 120px;
+}
+
+.table-container .header form {
+  display: grid;
+  grid-template-columns: 1fr 120px;
+  align-items: center;
+  grid-gap: 8px;
+}
+
+.table-container .header form input {
+  border: 1px solid #eee;
+  padding: 5px 8px;
+  box-sizing: border-box;
+  border-radius: 4px;
+}
+
+.table-container .header form button {
+  margin: 0;
+}
+
+/* pagination */
+.table-container {
+  display: grid;
+  grid-template: 64px 16px / 1fr;
+}
+
+.table-container .header {
+  margin: 0;
+  align-self: start;
+}
+
+.table-container .pagination {
+  margin: 0;
+  align-self: end;
+  justify-self: center;
+}
